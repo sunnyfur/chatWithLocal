@@ -1,0 +1,66 @@
+.body {
+    @include flex-column($gap-common);
+}
+
+.main {
+    margin: auto;
+}
+
+.form__fieldset {
+    @include flex-column($gap-common);
+
+
+    margin: $gap-common;
+
+    border: 0;
+
+}
+
+.form__fieldset_gen {
+    @include flex-column($gap-common);
+
+
+    align-items: flex-start;
+    margin: $gap-common;
+
+    border: 0;
+
+}
+
+.container_parseFio {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: $gap-common;
+
+}
+
+
+.form__input {
+    @include flex-column(5px);
+    margin: 10px 0;
+}
+
+.comment {
+    // margin-top: 10px;
+
+    &__date {
+
+        color: rgb(182, 182, 182);
+    }
+
+    &__text {
+
+        color: rgb(80, 80, 80);
+        margin-left: 5px;
+
+    }
+}
+
+.ava {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(192, 190, 190);
+    object-fit: cover;
+    // background-image: url("/assets/img/cat_default.svg");
+}

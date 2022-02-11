@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <main class="main">
+        <fieldset class="form__fieldset">
+            <legend>Личная информация </legend>
+            <div class="form__input">
+                <label for="idFIO">ФИО</label>
+                <input type="text" id="idFIO">
+            </div>
+            <div class="container_parseFio">
+                <div class="form__input">
+                    <label for="idName">Имя:</label>
+                    <input type="text" id="idName" disabled>
+                </div>
+                <div class="form__input">
+                    <label for="idSurname">Фамилия:</label>
+                    <input type="text" id="idSurname" disabled>
+                </div>
+                <div class="form__input">
+                    <label for="idSecondName">Отчество:</label>
+                    <input type="text" id="idSecondName" disabled>
+                </div>
+            </div>
+            <div>
+                <div><img class="ava" src="/assets/img/cat_default.svg"></div>
+                <input type="file" id="idSelectFile" accept="image/*" />
+            </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset_comments">
+            <legend>Чат</legend>
+
+
+            <textarea rows="5" id="idTextComment"></textarea>
+            <input type=button value="Добавить" id="idAddComment">
+
+
+
+        </fieldset>
+
+
+    </main>
+    <script src="js/parseFIO.js"></script>
+    <script src="js/formatDate.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/avatar.js"></script>
+
+</body>
+
+</html>
